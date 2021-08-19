@@ -1,0 +1,30 @@
+//Considere el siguiente problema:
+
+			//Escriba un programa corto que permita calcular los números primos dado un input de entrada.
+
+			 //N = 13 
+
+			 //Resultado :
+			 
+			 //[2,3,5,7,11,13]
+
+
+			//Observe que su resultado es una array de una dimensión.
+			//El valor mínimo de entrada será 1, en este caso el resultado devolverá -1. 
+		Scanner sc = new Scanner (System.in);
+		int n= 13;
+		
+		int numero = 0, contador=0, j;
+	    
+        for( j=1;j<=n;j++){
+        for(int i=j-1;i>1;i--){
+            if(j%i==0){
+                contador=0;
+            }
+        }
+            
+        if(contador==1){
+            System.out.println(j);
+        }
+        contador=1;
+        }
